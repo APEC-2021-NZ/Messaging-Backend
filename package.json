@@ -1,0 +1,27 @@
+{
+    "name": "messaging-backend",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node -r esm src/index.js",
+        "dev": "nodemon -r esm src/index.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^9.0.2",
+        "esm": "^3.2.25",
+        "git": "^0.1.5",
+        "socket.io": "^4.1.2",
+        "status": "0.0.13"
+    },
+    "devDependencies": {
+        "eslint": "^7.27.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.3.0"
+    }
+}
