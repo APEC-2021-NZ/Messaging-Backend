@@ -14,6 +14,9 @@ io.on('connection', (socket) => {
     const { conversations } = socket.handshake.query
     conversations.map((conversation) => socket.join(conversation))
 
+    socket.on('join', (conversation) => {
+        socket.join(conversation)
+    })
     socket.on('message', (conversation, message) => {
         socket.to(conversation).emit(message)
     })
