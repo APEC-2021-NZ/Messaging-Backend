@@ -20,4 +20,4 @@ io.on('connection', (socket) => {
 })
 
 console.log('start server at http://localhost:3000')
-httpServer.listen(3000)
+httpServer.listen(process.env.PORT || 3000)
